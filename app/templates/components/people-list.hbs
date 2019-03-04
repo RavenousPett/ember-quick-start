@@ -1,3 +1,7 @@
 <h2>{{this.title}}</h2>
 
-<PeopleList @title="List of Scientists" @people={{this.model}} />
+<ul>
+    {{#each this.people as |person|}}
+        <li>{{person}}</li>
+    {{/each}}
+</ul>
